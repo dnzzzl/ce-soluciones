@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-charcoal: #1C1C1E;
+  --color-charcoal-deep: #111110;
+  --color-cream: #FBF9F4;
+  --color-gold: #C5A059;
+  --color-gold-light: #E9C176;
+  --color-gold-dark: #775A19;
+  --color-muted: #5F5E60;
+  --color-wood: #7C5730;
+  --color-surface: #FBF9F4;
+  --color-surface-low: #F5F3EE;
+  --color-surface-high: #EAE8E3;
+  --color-surface-highest: #E4E2DD;
+  --color-outline: #7F7667;
+  --color-outline-light: #D1C5B4;
+
+  --font-display: 'Playfair Display', 'Georgia', serif;
+  --font-editorial: 'Newsreader', 'Georgia', serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+
+  --text-hero: clamp(2.5rem, 6vw, 4.5rem);
+  --text-hero--line-height: 1.1;
+  --text-section: clamp(1.75rem, 3.5vw, 2.75rem);
+  --text-section--line-height: 1.2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  background-color: var(--color-surface);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-charcoal-deep);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark);
+}
